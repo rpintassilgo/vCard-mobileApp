@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "256779446547",
+    "project_id": "vcard-e2c3d",
+    "storage_bucket": "vcard-e2c3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256779446547:android:21d49c46c56045bbb2d2e6",
+        "android_client_info": {
+          "package_name": "com.vcard_projetotaes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256779446547-egdvlcaja4n2307n1vsor08q9800rh9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL-3pZEGnL60pOu4weuKzQrgo9dfdeBnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "256779446547-egdvlcaja4n2307n1vsor08q9800rh9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
