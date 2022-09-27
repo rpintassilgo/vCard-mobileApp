@@ -39,7 +39,7 @@ export default class Piggybank extends React.Component{
 
         const getBalance = firebase
         .app()
-        .database('https://vcard-e2c3d-default-rtdb.europe-west1.firebasedatabase.app/')
+        .database('Insert firebase url')
         .ref('/vcards/' + phoneNumber)
         .once('value')
         .then(snapshot => this.setState({balance: snapshot.toJSON().balance, piggybank: snapshot.toJSON().piggybank}))
