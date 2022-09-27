@@ -71,7 +71,7 @@ class Homepage extends React.Component {
     readValues(phoneNumber) {
             const getBalance = firebase
             .app()
-            .database('https://vcard-e2c3d-default-rtdb.europe-west1.firebasedatabase.app/')
+            .database('Insert firebase url')
             .ref('/vcards/' + phoneNumber)
             .on('value', snapshot => {
                 if(snapshot.val() != null){
