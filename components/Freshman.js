@@ -48,7 +48,7 @@ class Freshman extends React.Component{
         try {
             const snapshot = await firebase
                 .app()
-                .database('https://vcard-e2c3d-default-rtdb.europe-west1.firebasedatabase.app/')
+                .database('Insert firebase url')
                 .ref('/vcards/' + phoneNumber)
                 .once('value')
 
