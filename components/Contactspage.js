@@ -320,7 +320,7 @@ export default class Contactspage extends React.Component {
         try {
             const snapshot = await firebase
                 .app()
-                .database('https://vcard-e2c3d-default-rtdb.europe-west1.firebasedatabase.app/')
+                .database('Insert firebase url')
                 .ref('/vcards/' + phoneNumber)
                 .once('value')
             if (!snapshot) throw new Error('Could not get snapshot')
@@ -336,7 +336,7 @@ export default class Contactspage extends React.Component {
     async updateBalance(phoneNumber, newBalance, isSender,amount,phoneNumberTransaction) {
         const balance = await firebase
             .app()
-            .database('https://vcard-e2c3d-default-rtdb.europe-west1.firebasedatabase.app/')
+            .database('Insert firebase url')
             .ref('/vcards/' + phoneNumber)
             .update({
                 balance: "" + newBalance + ""
@@ -348,7 +348,7 @@ export default class Contactspage extends React.Component {
 
             const transaction = await firebase
             .app()
-            .database('https://vcard-e2c3d-default-rtdb.europe-west1.firebasedatabase.app/')
+            .database('Insert firebase url')
             .ref('/vcards/' + phoneNumber + '/transactions')
             .child('' + Date.now() +'')
             .set({
@@ -363,7 +363,7 @@ export default class Contactspage extends React.Component {
 
             const transaction = await firebase
             .app()
-            .database('https://vcard-e2c3d-default-rtdb.europe-west1.firebasedatabase.app/')
+            .database('Insert firebase url')
             .ref('/vcards/' + phoneNumber + '/transactions')
             .child('' + Date.now() +'')
             .set({
@@ -380,7 +380,7 @@ export default class Contactspage extends React.Component {
         try {
             const snapshot = await firebase
                 .app()
-                .database('https://vcard-e2c3d-default-rtdb.europe-west1.firebasedatabase.app/')
+                .database('Insert firebase url')
                 .ref('/vcards/' + phoneNumber)
                 .once('value')
 
@@ -465,7 +465,7 @@ export default class Contactspage extends React.Component {
     async updatePiggy(phoneNumber, newPiggy) {
         const balance = await firebase
             .app()
-            .database('https://vcard-e2c3d-default-rtdb.europe-west1.firebasedatabase.app/')
+            .database('Insert firebase url')
             .ref('/vcards/' + phoneNumber)
             .update({
                 piggybank: "" + newPiggy + ""
